@@ -1,0 +1,25 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "sdj:Traccion" "sdj:SeguroDeCoche" "dbo:CapitalOfRegion" "sdj:TraccionTrasera" "sdj:DispositivoAmbiental" "sdj:Gasolina" "s4bldg:Engine" "sdj:Comprador" "http://xmlns.com/foaf/0.1/Person" "sdj:MotorDeCoche" "sdj:CambioManual" "sdj:TraccionFrontal" "sdj:CajaDeCambios" "sdj:CambioAutomatico" "sdj:Traccion4x4" "dbo:City" "sdj:C" "sdj:ECO" "holy:Car" "sdj:ModeloVendido" "sdj:MotorElectrico" "s4bldg:EnergyConversionDevice" "sdj:MotorHibrido" "http://example.org/stelldj#0" "km4c:Insurance" "sdj:Diesel" "sdj:MotorTermico" "holy:FossilFuel" ; /*classes style*/
+	"sdj:Comprador" -> "http://xmlns.com/foaf/0.1/Person" [ label = "rdfs:subClassOf" ];
+	"sdj:ECO" -> "sdj:DispositivoAmbiental" [ label = "rdfs:subClassOf" ];
+	"sdj:CambioAutomatico" -> "sdj:CajaDeCambios" [ label = "rdfs:subClassOf" ];
+	"sdj:TraccionFrontal" -> "sdj:Traccion" [ label = "rdfs:subClassOf" ];
+	"sdj:MotorDeCoche" -> "s4bldg:Engine" [ label = "rdfs:subClassOf" ];
+	"sdj:Gasolina" -> "holy:FossilFuel" [ label = "rdfs:subClassOf" ];
+	"sdj:MotorElectrico" -> "sdj:MotorDeCoche" [ label = "rdfs:subClassOf" ];
+	"sdj:C" -> "sdj:DispositivoAmbiental" [ label = "rdfs:subClassOf" ];
+	"sdj:Diesel" -> "holy:FossilFuel" [ label = "rdfs:subClassOf" ];
+	"s4bldg:Engine" -> "s4bldg:EnergyConversionDevice" [ label = "rdfs:subClassOf" ];
+	"sdj:SeguroDeCoche" -> "km4c:Insurance" [ label = "rdfs:subClassOf" ];
+	"http://example.org/stelldj#0" -> "sdj:DispositivoAmbiental" [ label = "rdfs:subClassOf" ];
+	"sdj:TraccionTrasera" -> "sdj:Traccion" [ label = "rdfs:subClassOf" ];
+	"sdj:MotorTermico" -> "sdj:MotorDeCoche" [ label = "rdfs:subClassOf" ];
+	"sdj:CambioManual" -> "sdj:CajaDeCambios" [ label = "rdfs:subClassOf" ];
+	"dbo:CapitalOfRegion" -> "dbo:City" [ label = "rdfs:subClassOf" ];
+	"sdj:MotorHibrido" -> "sdj:MotorDeCoche" [ label = "rdfs:subClassOf" ];
+	"sdj:ModeloVendido" -> "holy:Car" [ label = "rdfs:subClassOf" ];
+	"sdj:Traccion4x4" -> "sdj:Traccion" [ label = "rdfs:subClassOf" ];
+
+}
