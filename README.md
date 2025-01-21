@@ -1,2 +1,0 @@
-# STELLDJ-ONTOLOGY
-Stelldj ontology 
