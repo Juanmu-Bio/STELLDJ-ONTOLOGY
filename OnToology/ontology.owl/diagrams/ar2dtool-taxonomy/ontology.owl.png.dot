@@ -1,0 +1,25 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "stelldj:Traccion" "stelldj:SeguroDeCoche" "http://dbpedia.org/ontology/CapitalOfRegion" "stelldj:TraccionTrasera" "stelldj:DispositivoAmbiental" "stelldj:Gasolina" "https://saref.etsi.org/saref4bldg/Engine" "stelldj:Comprador" "http://xmlns.com/foaf/0.1/Person" "stelldj:MotorDeCoche" "stelldj:CambioManual" "stelldj:TraccionFrontal" "stelldj:CajaDeCambios" "stelldj:CambioAutomatico" "stelldj:Traccion4x4" "http://dbpedia.org/ontology/City" "stelldj:C" "stelldj:ECO" "http://purl.org/holy/ns#Car" "stelldj:ModeloVendido" "stelldj:MotorElectrico" "https://saref.etsi.org/saref4bldg/EnergyConversionDevice" "stelldj:MotorHibrido" "http://example.org/stelldj#0" "http://www.disit.org/km4city/schema#Insurance" "stelldj:Diesel" "stelldj:MotorTermico" "http://purl.org/holy/ns#FossilFuel" ; /*classes style*/
+	"stelldj:Comprador" -> "http://xmlns.com/foaf/0.1/Person" [ label = "rdfs:subClassOf" ];
+	"stelldj:ECO" -> "stelldj:DispositivoAmbiental" [ label = "rdfs:subClassOf" ];
+	"stelldj:CambioAutomatico" -> "stelldj:CajaDeCambios" [ label = "rdfs:subClassOf" ];
+	"stelldj:TraccionFrontal" -> "stelldj:Traccion" [ label = "rdfs:subClassOf" ];
+	"stelldj:MotorDeCoche" -> "https://saref.etsi.org/saref4bldg/Engine" [ label = "rdfs:subClassOf" ];
+	"stelldj:Gasolina" -> "http://purl.org/holy/ns#FossilFuel" [ label = "rdfs:subClassOf" ];
+	"stelldj:MotorElectrico" -> "stelldj:MotorDeCoche" [ label = "rdfs:subClassOf" ];
+	"stelldj:C" -> "stelldj:DispositivoAmbiental" [ label = "rdfs:subClassOf" ];
+	"stelldj:Diesel" -> "http://purl.org/holy/ns#FossilFuel" [ label = "rdfs:subClassOf" ];
+	"https://saref.etsi.org/saref4bldg/Engine" -> "https://saref.etsi.org/saref4bldg/EnergyConversionDevice" [ label = "rdfs:subClassOf" ];
+	"stelldj:SeguroDeCoche" -> "http://www.disit.org/km4city/schema#Insurance" [ label = "rdfs:subClassOf" ];
+	"http://example.org/stelldj#0" -> "stelldj:DispositivoAmbiental" [ label = "rdfs:subClassOf" ];
+	"stelldj:TraccionTrasera" -> "stelldj:Traccion" [ label = "rdfs:subClassOf" ];
+	"stelldj:MotorTermico" -> "stelldj:MotorDeCoche" [ label = "rdfs:subClassOf" ];
+	"stelldj:CambioManual" -> "stelldj:CajaDeCambios" [ label = "rdfs:subClassOf" ];
+	"http://dbpedia.org/ontology/CapitalOfRegion" -> "http://dbpedia.org/ontology/City" [ label = "rdfs:subClassOf" ];
+	"stelldj:MotorHibrido" -> "stelldj:MotorDeCoche" [ label = "rdfs:subClassOf" ];
+	"stelldj:ModeloVendido" -> "http://purl.org/holy/ns#Car" [ label = "rdfs:subClassOf" ];
+	"stelldj:Traccion4x4" -> "stelldj:Traccion" [ label = "rdfs:subClassOf" ];
+
+}
